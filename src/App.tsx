@@ -6,7 +6,7 @@ function App() {
   return (
     <main>
       <Nav/>
-      <section className="xl:padding-1 wide:padding-r padding-b">
+      <section className="md:padding-1 wide:padding-r padding-b">
         <Hero/>
       </section>
       <section className="padding">

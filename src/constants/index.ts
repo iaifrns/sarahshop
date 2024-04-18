@@ -1,4 +1,4 @@
-import { imgShoe1, imgShoe2, imgShoe3 } from "../assets/images";
+import { imgShoe2, imgShoe3, imgShoe5 } from "../assets/images";
 import { Shoe } from "../types";
 
 
@@ -11,8 +11,8 @@ export const navLinks = [
 
 export const shoes : Shoe[] = [
     {
-        thumbnail: imgShoe1,
-        bigShoe: imgShoe1,
+        thumbnail: imgShoe5,
+        bigShoe: imgShoe5,
     },
     {
         thumbnail: imgShoe2,
