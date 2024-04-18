@@ -1,17 +1,26 @@
-import { imgShoe1, imgShoe2, imgShoe3 } from "../assets/images";
+import { useState } from "react";
+import { imgShoe1 } from "../assets/images";
 import Button from "../components/Button";
-import { statistics } from "../constants";
+import ShoeCard from "../components/ShoeCard";
+import { shoes, statistics } from "../constants";
 
 const Hero = () => {
+
+  const [bigShoeImg, setBigShoeImg] = useState(imgShoe1);
+
   return (
     <section
       id="home"
       className="w-full flex md:flex-row flex-col justify-center min-h-screen gap-10 max-container px-7"
     >
       <div className="relative md:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
-        <p className="text-xl font-montserrat text-coral-red">Our Summer Collection</p>
+        <p className="text-xl font-montserrat text-coral-red">
+          Our Summer Collection
+        </p>
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82] font-bold">
-          <span className="md:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
+          <span className="md:bg-white xl:whitespace-nowrap relative z-10 pr-10">
+            The New Arrival
+          </span>
           <br />
           <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
         </h1>
@@ -25,13 +34,27 @@ const Hero = () => {
           {statistics.map((data, index) => (
             <div key={index}>
               <p className="text-4xl font-palanquin font-bold">{data.value}</p>
-              <p className="leading-7 font-montserrat text-slate-gray">{data.label}</p>
+              <p className="leading-7 font-montserrat text-slate-gray">
+                {data.label}
+              </p>
             </div>
           ))}
         </div>
       </div>
-      <div className="relative flex justify-center items-center md:min-h-screen">
-        <img src={imgShoe3} alt="first nike shoe" width={610} height={500} className="object-cover w-full h-full" />
+      <div className="relative flex justify-center items-center md:min-h-screen max-md:py-40 bg-primary bg-cover bg-center max-sm:px-6">
+        <img
+          src={bigShoeImg}
+          alt="first nike shoe"
+          width={610}
+          className="object-cover h-full"
+        />
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%]">
+          {shoes.map((shoe, index) => (
+            <div key={index}>
+              <ShoeCard imgURL={shoe} changeBigShoe={img => setBigShoeImg(img)} bigShoeImg={bigShoeImg} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

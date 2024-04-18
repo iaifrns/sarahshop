@@ -4,12 +4,12 @@ import { Icon } from "@iconify/react";
 
 const Nav = () => {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x absolute z-10 w-full">
       <nav className="flex justify-between max-container items-center">
         <a href="/">
           <img src={logo} alt="Logo" width={150} height={29} />
         </a>
-        <ul className="flex-1 flex justify-center gap-16 items-center max-lg:hidden bg-white">
+        <ul className="flex-1 flex justify-center gap-16 items-center max-lg:hidden bg-white z-30">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a

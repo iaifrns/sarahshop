@@ -1,3 +1,5 @@
+import { imgShoe1, imgShoe2, imgShoe3 } from "../assets/images";
+import { Shoe } from "../types";
 
 
 export const navLinks = [
@@ -7,20 +9,20 @@ export const navLinks = [
     { href: "#contact-us", label: "Contact Us" },
 ];
 
-/* export const shoes = [
+export const shoes : Shoe[] = [
     {
-        thumbnail: thumbnailShoe1,
-        bigShoe: bigShoe1,
+        thumbnail: imgShoe1,
+        bigShoe: imgShoe1,
     },
     {
-        thumbnail: thumbnailShoe2,
-        bigShoe: bigShoe2,
+        thumbnail: imgShoe2,
+        bigShoe: imgShoe2,
     },
     {
-        thumbnail: thumbnailShoe3,
-        bigShoe: bigShoe3,
+        thumbnail: imgShoe3,
+        bigShoe: imgShoe3,
     },
-]; */
+];
 
 export const statistics = [
     { value: '1k+', label: 'Brands' },
