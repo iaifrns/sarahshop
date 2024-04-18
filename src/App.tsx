@@ -1,5 +1,5 @@
 import Nav from "./components/Nav";
-import { CustonerReviews, Footer, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from "./sections";
+import { CustonerReviews, Footer, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from "./sections";
 
 function App() {
 
@@ -7,7 +7,7 @@ function App() {
     <main>
       <Nav/>
       <section className="xl:padding-1 wide:padding-r padding-b">
-        hero
+        <Hero/>
       </section>
       <section className="padding">
         <PopularProducts/>
