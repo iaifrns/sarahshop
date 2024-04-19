@@ -13,11 +13,11 @@ const Hero = () => {
       id="home"
       className="w-full flex md:flex-row flex-col justify-center min-h-screen gap-10 max-container"
     >
-      <div className="relative md:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
+      <div className="relative md:w-2/5 flex flex-col justify-center items-start w-full max-md:padding-x pt-32">
         <p className="text-xl font-montserrat text-coral-red">
           Our Summer Collection
         </p>
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82] font-bold">
+        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
           <span className="md:bg-white xl:whitespace-nowrap relative z-10 pr-10">
             The New Arrival
           </span>
@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((data, index) => (
             <div key={index}>
-              <p className="text-4xl font-palanquin font-bold">{data.value}</p>
+              <p className="text-4xl max-sm:text-3xl font-palanquin font-bold">{data.value}</p>
               <p className="leading-7 font-montserrat text-slate-gray">
                 {data.label}
               </p>

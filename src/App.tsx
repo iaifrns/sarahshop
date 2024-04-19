@@ -21,7 +21,7 @@ function App() {
       <section className="padding">
         <SpecialOffer/>
       </section>
-      <section className="padding bg-pale-bleu">
+      <section className="padding bg-slate-100">
         <CustonerReviews/>
       </section>
       <section className="padding-x sm:py-32 py-16 w-full">
