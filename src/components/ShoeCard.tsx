@@ -22,12 +22,10 @@ const ShoeCard = ({
       } cursor-pointer max-sm:flex-1 rounded-xl`}
       onClick={handleClick}
     >
-      <div className="flex justify-center items-center bg-slate-300 bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
+      <div className="flex justify-center items-center bg-slate-300 bg-center bg-cover sm:w-40 sm:h-40 max-sm:h-28 max-sm:w-28 rounded-xl max-sm:p-4">
         <img
           src={imgURL.thumbnail}
           alt="shoe collection"
-          width={127}
-          height={103}
           className="object-cover h-full"
         />
       </div>
